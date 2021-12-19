@@ -19,6 +19,8 @@ export class ProductDetailsComponent implements OnInit {
     window.alert('You just added this awesome product to the cart!');
   }
 
+
+
   constructor(private route: ActivatedRoute,
               private cartService: CartService
               ) { }

@@ -30,6 +30,10 @@
   h2 {
     font-size: 20px;
   }
+
+  h3 {
+    font-size: 15px;
+  }
   
   h1, h2 {
     font-weight: lighter;
@@ -98,6 +102,11 @@
     background-color: white;
     color: #1976d2;
   }
+
+  .fancy-button2 {
+    background-color: #1976d2;
+    color: white;
+  }
   
   .fancy-button i.material-icons {
     color: #1976d2;
@@ -122,6 +131,11 @@
     margin: 0;
   }
   
+  app-top-bar h3{
+    color: white;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+  }
   /* Checkout Cart, Shipping Prices */
   
   .cart-item, .shipping-item {

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,7 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  items = this.cartService.getItems();
+
+  clearCart() {
+    this.cartService.clearCart();
+    window.location.reload();
+    window.alert('Now the cart is empty!');
+    
+  }
+
+  refresh() {
+    this.cd.detectChanges();
+  }
+
+  constructor(
+    private cartService: CartService,
+    private cd: ChangeDetectorRef
+    ) { }
+
+  
 
   ngOnInit(): void {
   }
