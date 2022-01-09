@@ -17,10 +17,6 @@ export class CartComponent implements OnInit {
     
   }
 
-  refresh() {
-    this.cd.detectChanges();
-  }
-
   constructor(
     private cartService: CartService,
     private cd: ChangeDetectorRef
